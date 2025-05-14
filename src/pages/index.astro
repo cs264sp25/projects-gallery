@@ -1,11 +1,13 @@
 ---
 import Base from "@/layouts/Base.astro";
 import ProjectGallery from "@/components/ProjectGallery";
+import Hero from "@/components/Hero";
 import { getCollection } from "astro:content";
 
 const projects = await getCollection("projects");
 ---
 
 <Base>
+  <Hero client:load/>
   <ProjectGallery projects={projects} client:load />
 </Base>
