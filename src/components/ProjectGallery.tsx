@@ -2,6 +2,8 @@ import * as React from "react";
 import ProjectCard from "@/components/ProjectCard";
 import type { ProjectEntry } from "@/content/config";
 import { Button } from "./ui/button";
+import { Input } from "./ui/input";
+import { cn } from "@/lib/utils";
 
 type ProjectGalleryProps = {
   projects: ProjectEntry[];
@@ -31,27 +33,33 @@ export default function ProjectGallery({ projects }: ProjectGalleryProps) {
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
         <div className="flex gap-2 flex-wrap">
           <Button
-            variant={filter === "All" ? "default" : "secondary"}
+            variant={filter === "All" ? "default" : "outline"}
             onClick={() => setFilter("All")}
+            className={cn({
+              "border-primary": filter !== "All",
+            })}
           >
             All
           </Button>
           {years.map((year) => (
             <Button
               key={year}
-              variant={filter === year ? "default" : "secondary"}
+              variant={filter === year ? "default" : "outline"}
+              className={cn({
+                "border-primary": filter !== year,
+              })}
               onClick={() => setFilter(year)}
             >
               {year}
             </Button>
           ))}
         </div>
-        <input
+        <Input
           type="text"
           placeholder="Search projects..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="border rounded-lg px-4 py-2 w-full sm:w-64 focus:outline-none focus:ring-2 focus:ring-primary"
+          className={cn("border-primary px-4 py-2 w-full sm:w-64", ``)}
         />
       </div>
       {/* Project Grid */}
