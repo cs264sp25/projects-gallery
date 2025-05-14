@@ -26,7 +26,7 @@ export default function ProjectGallery({ projects }: ProjectGalleryProps) {
   });
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-10">
+    <div id="gallery" className="max-w-6xl mx-auto px-4 py-10">
       {/* Filter and Search Bar */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
         <div className="flex gap-2 flex-wrap">
