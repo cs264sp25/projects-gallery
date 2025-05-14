@@ -1,8 +1,7 @@
 ---
 title: "SmartStudy AI Tutor"
 description: "An AI-powered tutoring system that adapts to individual learning styles and provides personalized educational content."
-semester: "Fall 2023"
-tags: ["Machine Learning", "Education", "Python", "Text-to-Speech"]
+year: "2023"
 githubUrl: "https://github.com/example/smartstudy-ai"
 teamMembers:
   - name: "Michael Chang"
@@ -22,7 +21,6 @@ teamMembers:
     githubUrl: "https://github.com/jameswilson"
 demoUrl: "https://smartstudy-ai.netlify.app"
 imageUrl: "https://images.pexels.com/photos/4144179/pexels-photo-4144179.jpeg"
-publishedDate: 2023-12-10
 ---
 
 ## Project Overview

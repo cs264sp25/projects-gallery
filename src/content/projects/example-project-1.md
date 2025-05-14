@@ -1,8 +1,7 @@
 ---
 title: "AI-Powered Recipe Generator"
 description: "An application that generates custom recipes based on ingredients you have at home, dietary restrictions, and flavor preferences."
-semester: "Spring 2023"
-tags: ["GPT-4", "Web App", "Natural Language Processing", "React"]
+year: "2023"
 githubUrl: "https://github.com/example/recipe-generator"
 teamMembers:
   - name: "Jane Smith"
@@ -19,7 +18,6 @@ teamMembers:
     githubUrl: "https://github.com/bobbrown"
 demoUrl: "https://recipe-generator-demo.vercel.app"
 imageUrl: "https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg"
-publishedDate: 2023-05-15
 ---
 
 ## Project Overview

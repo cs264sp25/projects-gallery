@@ -1,8 +1,11 @@
 ---
 import Base from "@/layouts/Base.astro";
-import { ModeToggle } from "@/components/ModeToggle";
+import ProjectGallery from "@/components/ProjectGallery";
+import { getCollection } from "astro:content";
+
+const projects = await getCollection("projects");
 ---
 
 <Base>
-  <h1>Astro</h1>
+  <ProjectGallery projects={projects} client:load />
 </Base>

@@ -5,8 +5,7 @@ const projectsCollection = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string(),
-    semester: z.string(),
-    tags: z.array(z.string()),
+    year: z.string(),
     githubUrl: z.string().url(),
     teamMembers: z.array(
       z.object({
@@ -19,10 +18,32 @@ const projectsCollection = defineCollection({
     ),
     demoUrl: z.string().url().optional(),
     imageUrl: z.string().optional(),
-    publishedDate: z.date(),
   }),
 });
 
 export const collections = {
   projects: projectsCollection,
+};
+
+// Type for a project entry as returned by getCollection('projects')
+export type ProjectEntry = {
+  id: string;
+  slug: string;
+  body: string;
+  collection: 'projects';
+  data: {
+    title: string;
+    description: string;
+    year: string;
+    githubUrl: string;
+    teamMembers: Array<{
+      name: string;
+      email?: string;
+      photoUrl?: string;
+      githubUrl?: string;
+      linkedinUrl?: string;
+    }>;
+    demoUrl?: string;
+    imageUrl?: string;
+  };
 };
