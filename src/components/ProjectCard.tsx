@@ -24,7 +24,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      {project.imageUrl && (
+      {/* {project.imageUrl && (
         <div className="aspect-video w-full bg-muted overflow-hidden">
           <img
             src={project.imageUrl}
@@ -32,7 +32,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             className="w-full h-full object-cover transition-transform group-hover:scale-105"
           />
         </div>
-      )}
+      )} */}
       <CardContent className="flex flex-col gap-2 py-4">
         <CardTitle className="text-lg font-bold line-clamp-1">
           {project.title}
