@@ -20,7 +20,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   const [hovered, setHovered] = React.useState(false);
   return (
     <Card
-      className="overflow-hidden group transition-shadow hover:shadow-lg cursor-pointer"
+      className="overflow-hidden group transition-shadow hover:shadow-lg cursor-pointer border-primary"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
