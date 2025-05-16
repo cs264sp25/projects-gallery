@@ -21,7 +21,7 @@ teamMembers:
     linkedinUrl: "https://www.linkedin.com/in/enoch-appiah-282361219/"
     githubUrl: "https://github.com/enochappiah"
     photoUrl: "/images/spring2025-team05-enoch.jpeg"
-  - name: "Alex Barbour"
+  - name: "Alexis Barbour"
     githubUrl: "https://github.com/Glitch-kun"
 ---
 
@@ -52,7 +52,3 @@ Currently, Calendula's AI model support is limited, and the application is prima
 ## Future Development Plans
 
 Future enhancements will include expanded calendar service integrations, more sophisticated AI scheduling features, improved conflict resolution, and additional analytics. The team also plans to support more AI models and further optimize performance and user experience, making Calendula an even more powerful tool for managing time and events.
-
-### Project Insights
-
-Calendula represents an innovative approach to personal and professional scheduling, leveraging AI to simplify time management and improve productivity. By combining intuitive design with intelligent assistance, the project aims to transform how users interact with their calendars.
