@@ -17,7 +17,15 @@ const projectSchema = z.object({
   ),
 });
 
-export type ProjectEntry = z.infer<typeof projectSchema>;
+export type ProjectSchemaType = z.infer<typeof projectSchema>;
+
+export type ProjectEntry = {
+  data: ProjectSchemaType;
+  id: string;
+  slug: string;
+  collection: string;
+  body: string;
+};
 
 const projectsCollection = defineCollection({
   type: "content",
