@@ -22,16 +22,10 @@ export default function ProjectCard({ projectEntry }: ProjectCardProps) {
       className="overflow-hidden group transition-shadow hover:shadow-lg cursor-pointer border-primary"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
+      onClick={() => {
+        window.location.href = `/projects/${slug}`;
+      }}
     >
-      {/* {project.imageUrl && (
-        <div className="aspect-video w-full bg-muted overflow-hidden">
-          <img
-            src={project.imageUrl}
-            alt={project.title}
-            className="w-full h-full object-cover transition-transform group-hover:scale-105"
-          />
-        </div>
-      )} */}
       <CardContent className="flex flex-col gap-2 py-4">
         <CardTitle className="text-lg font-bold line-clamp-1">
           {project.title}
