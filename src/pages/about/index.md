@@ -15,9 +15,13 @@ This course serves as an introduction to generative AI and its practical applica
 Upon successful completion of this course, students will be able to:
 
 - Design and implement Generative AI applications across various industries using low-code platforms for rapid prototyping and testing.
+
 - Create conversational agents and question-answering systems using language models, enhanced through advanced techniques such as memory, retrieval, chaining, and agency.
+
 - Develop personalized assistants and specialized chatbots that interact with private data and documents, utilizing embeddings, vector databases, and Retrieval Augmented Generation (RAG) to enhance retrieval without model training or fine-tuning.
+
 - Build and deploy LLM-powered services as callable APIs, including management, debugging, and monitoring of language model behavior in complex interactions using DevOps tools and best practices.
+
 - Utilize language models as developer tools to accelerate application development through code improvement, debugging, understanding, and documentation.
 
 ## Instructional Approach: Project-Based Learning
