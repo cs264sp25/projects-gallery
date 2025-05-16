@@ -10,13 +10,12 @@ import type { ProjectEntry } from "@/content/config";
 import { Badge } from "./ui/badge";
 import { ArrowRightIcon } from "lucide-react";
 
-type Project = ProjectEntry["data"];
-
 type ProjectCardProps = {
-  project: Project;
+  projectEntry: ProjectEntry;
 };
 
-export default function ProjectCard({ project }: ProjectCardProps) {
+export default function ProjectCard({ projectEntry }: ProjectCardProps) {
+  const { data: project, id, slug } = projectEntry;
   const [hovered, setHovered] = React.useState(false);
   return (
     <Card
@@ -44,7 +43,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       <CardFooter className="flex items-center justify-between border-t pt-4 mt-2 relative">
         <Badge variant={"secondary"}>{project.year}</Badge>
         <a
-          href="#"
+          href= {`/projects/${slug}`}
           className={`flex items-center text-primary text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity absolute right-6 ${
             hovered ? "pointer-events-auto" : "pointer-events-none"
           }`}

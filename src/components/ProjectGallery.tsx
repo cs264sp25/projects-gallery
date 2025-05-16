@@ -65,7 +65,7 @@ export default function ProjectGallery({ projects }: ProjectGalleryProps) {
       {/* Project Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {filteredProjects.map((project) => (
-          <ProjectCard key={project.id} project={project.data} />
+          <ProjectCard key={project.id} projectEntry={project} />
         ))}
       </div>
     </div>
