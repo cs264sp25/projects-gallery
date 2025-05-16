@@ -21,6 +21,10 @@ teamMembers:
     linkedinUrl: "https://www.linkedin.com/in/tanisha-tarin/"
     githubUrl: "https://github.com/tanishatarin"
     photoUrl: "/images/spring2025-team04-tanisha.jpeg"
+  - name: "Maria Herne"
+    linkedinUrl: "https://www.linkedin.com/in/maria-herne/"
+    githubUrl: "https://github.com/alwaysmaria1"
+    photoUrl: "/images/spring2025-team04-maria.jpeg"
 ---
 
 ## Project Overview
