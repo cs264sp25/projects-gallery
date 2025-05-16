@@ -24,7 +24,7 @@ export default function ProjectHero({
         <h1 className="text-4xl font-bold tracking-tight">{title}</h1>
       </div>
       <p className="text-lg text-muted-foreground max-w-2xl">{description}</p>
-      <div className="flex gap-4 mt-2">
+      <div className="flex flex-col sm:flex-row gap-4 mt-2">
         {githubUrl && (
           <a
             href={githubUrl}
