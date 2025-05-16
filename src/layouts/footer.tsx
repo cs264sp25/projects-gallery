@@ -29,7 +29,7 @@ export function Footer() {
                   <span className="sr-only">GitHub</span>
                 </a>
               </div>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-sm text-muted-foreground text-center sm:text-right">
                 © {new Date().getFullYear()} PGAi Projects. All rights
                 reserved.
               </p>
