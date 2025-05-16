@@ -38,9 +38,7 @@ export default function ProjectCard({ projectEntry }: ProjectCardProps) {
         <Badge variant={"secondary"}>{project.year}</Badge>
         <a
           href={`/projects/${slug}`}
-          className={`flex items-center text-primary text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity absolute right-6 ${
-            hovered ? "pointer-events-auto" : "pointer-events-none"
-          }`}
+          className={`flex items-center text-primary text-sm font-medium absolute right-6`}
           tabIndex={-1}
         >
           <span className="hidden sm:block">View Project</span>
