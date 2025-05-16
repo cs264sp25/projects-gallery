@@ -37,7 +37,7 @@ export default function ProjectCard({ projectEntry }: ProjectCardProps) {
       <CardFooter className="flex items-center justify-between border-t pt-4 mt-2 relative">
         <Badge variant={"secondary"}>{project.year}</Badge>
         <a
-          href= {`/projects/${slug}`}
+          href={`/projects/${slug}`}
           className={`flex items-center text-primary text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity absolute right-6 ${
             hovered ? "pointer-events-auto" : "pointer-events-none"
           }`}

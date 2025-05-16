@@ -13,7 +13,8 @@ export function Footer() {
                 <span className="text-lg font-bold">PGAi Projects</span>
               </a>
               <p className="text-sm text-muted-foreground text-center md:text-left max-w-xs">
-              Student projects from the "Practical Generative AI" course at the Department of Computer Science, Johns Hopkins University.
+                Student projects from the "Practical Generative AI" course at
+                the Department of Computer Science, Johns Hopkins University.
               </p>
             </div>
             <div className="flex flex-col items-center md:items-end space-y-4">
