@@ -1,11 +1,12 @@
 ---
-import { getCollection } from 'astro:content';
-import Article from '../../layouts/Article.astro';
+import { getCollection } from "astro:content";
+import Article from "@/layouts/Article.astro";
+import ProjectHero from "@/components/ProjectHero.tsx";
+import TeamMembers from "@/components/TeamMembers.tsx";
 
 export async function getStaticPaths() {
-  const projectEntries = await getCollection('projects');
-  
-  return projectEntries.map(entry => ({
+  const projectEntries = await getCollection("projects");
+  return projectEntries.map((entry) => ({
     params: { slug: entry.slug },
     props: { entry },
   }));
@@ -13,8 +14,22 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content } = await entry.render();
+const { title, year, description, githubUrl, slidesUrl, teamMembers } =
+  entry.data;
 ---
 
 <Article frontmatter={entry.data}>
+  
+  <ProjectHero
+    title={title}
+    year={year}
+    description={description}
+    githubUrl={githubUrl}
+    slidesUrl={slidesUrl}
+    client:load
+  />
+
+  <TeamMembers teamMembers={teamMembers} client:load />
+
   <Content />
 </Article>
