@@ -12,17 +12,15 @@ This course serves as an introduction to generative AI and its practical applica
 
 ## Course Learning Outcomes
 
-Upon successful completion of this course, students will be able to:
+- By the end of this course, students will be able to create conversational agents and question-answering systems using language models, integrating advanced techniques such as memory, retrieval, chaining, and agency.
 
-- Design and implement Generative AI applications across various industries using low-code platforms for rapid prototyping and testing.
+- Students will develop personalized assistants and specialized chatbots capable of interacting with private data and documents, utilizing embeddings and vector databases to enhance retrieval processes without the need for model training or fine-tuning.
 
-- Create conversational agents and question-answering systems using language models, enhanced through advanced techniques such as memory, retrieval, chaining, and agency.
+- Students will build and deploy LLM-powered services as callable APIs, including techniques for managing, debugging, and monitoring language model behavior in complex interactions using DevOps tools and best practices.
 
-- Develop personalized assistants and specialized chatbots that interact with private data and documents, utilizing embeddings, vector databases, and Retrieval Augmented Generation (RAG) to enhance retrieval without model training or fine-tuning.
+- In collaborative teams, students will design and implement software applications that utilize Generative AI as a core feature, demonstrating teamwork and project management skills.
 
-- Build and deploy LLM-powered services as callable APIs, including management, debugging, and monitoring of language model behavior in complex interactions using DevOps tools and best practices.
-
-- Utilize language models as developer tools to accelerate application development through code improvement, debugging, understanding, and documentation.
+- Students will utilize language models as developer tools to accelerate application development, showcasing their ability to improve code, debug problems, and create documentation effectively.
 
 ## Instructional Approach: Project-Based Learning
 
